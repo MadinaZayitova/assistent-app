@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.dashboart-wrapper{
+    display: flex;
+}
+.sidebar{
+    width: 320px;
+    height: 100vh;
+    overflow:auto;
+    background-color: #181818;
+    padding: 20px;
+    padding-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar::-webkit-scrollbar{
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: #181818;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar-header .logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-btn{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: #37373D;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-btn:hover{
+    box-shadow: 0px 0px 5px rgba(132, 132, 145, 0.3);
+}
+
+.prompts{
+    margin-bottom: 20px;
+}
+
+.prompts h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.prompts nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prompts nav a{
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.prompts nav a:hover{
+    background-color: #37373D;
 }
